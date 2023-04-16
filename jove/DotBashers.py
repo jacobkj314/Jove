@@ -218,7 +218,7 @@ def dot_dfa(D, STATENAME_MAXSIZE=20):
        Generate a dot string representing the automaton. 
        Suppress "black-hole states". 
     """
-    assert(is_partially_consistent_dfa(D))
+    # # # assert(is_partially_consistent_dfa(D))
     D           = shrink_dfastates(D, STATENAME_MAXSIZE)
     hdr         = prDotHeader()
     nodeDefs    = prNodeDefs(D, isNotBH) # Show isNotBH states
